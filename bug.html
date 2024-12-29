@@ -1,0 +1,7 @@
+This error occurs when using Tailwind's `@apply` directive with a utility class that doesn't exist or is misspelled.  For example:
+
+```html
+<div class="bg-red-500 @apply text-blue-600 text-not-found"></div>
+```
+
+The class `text-not-found` does not exist, causing this error.  Tailwind will not throw an error during build but will result in unexpected styling (the class will be ignored).
